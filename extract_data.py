@@ -8,7 +8,7 @@ from bearish import is_bearish_candle, is_bearish_hammer_candle
 def get_symbol_data(ticker_symbol):
    try:
       # Download the stock data
-      stock_data = yf.download(ticker_symbol, period="1d")
+      stock_data = yf.download(ticker_symbol, period="1wk")
 
       # Get the last OHLC prices
       last_open_price = stock_data["Open"].iloc[-1]
