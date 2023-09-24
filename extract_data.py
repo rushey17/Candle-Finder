@@ -48,5 +48,6 @@ def trigger(company_names):
 
 trigger(company_names_mappings.values())
 print(bearish_stocks)
+print('------------')
 print(bullish_stocks)
 print("Completed...!!!")
